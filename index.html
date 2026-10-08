@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grão & Prosa | Cafeteria e Confeitaria</title>
+  <meta name="description" content="Cafés especiais, bolos e salgados artesanais. Venha tomar um café com a gente.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">Grão &amp; Prosa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="btn btn-warning btn-sm ms-lg-2" href="https://wa.me/5549999999999" target="_blank" rel="noopener">Pedir no WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="hero">
+    <div class="container hero__content">
+      <h1>Café coado na hora, conversa que não tem pressa.</h1>
+      <p class="lead">Grãos de pequenos produtores, bolos feitos todas as manhãs e uma mesa sempre livre para você.</p>
+      <div class="d-flex flex-wrap gap-2">
+        <a href="#cardapio" class="btn btn-warning btn-lg">Ver cardápio</a>
+        <a href="#contato" class="btn btn-outline-light btn-lg">Fazer uma encomenda</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="sobre">
+        <div class="sobre__texto">
+          <h2>Uma cafeteria de bairro, feita com calma</h2>
+          <p>A Grão &amp; Prosa nasceu em 2018 em São Miguel do Oeste, de uma vontade simples: servir um café bem feito num lugar onde as pessoas se sintam em casa.</p>
+          <p>Torramos em lotes pequenos, assamos todos os dias e mudamos o cardápio conforme a estação.</p>
+        </div>
+        <ul class="sobre__info list-unstyled">
+          <li><strong>Seg a Sáb</strong> 8h às 19h</li>
+          <li><strong>Domingo</strong> 9h às 13h</li>
+          <li><strong>Endereço</strong> Rua das Flores, 123 – Centro</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="cardapio" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Cardápio da casa</h2>
+      <p class="section__sub">Nossos preferidos, do café da manhã à sobremesa.</p>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">☕</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Espresso duplo</h3>
+              <p class="card-cafe__text">Blend de grãos arábica, corpo médio e final achocolatado.</p>
+              <span class="card-cafe__price">R$ 9,00</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">🥛</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Cappuccino da casa</h3>
+              <p class="card-cafe__text">Espresso, leite vaporizado e canela em pó.</p>
+              <span class="card-cafe__price">R$ 14,00</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">🍰</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Bolo de cenoura</h3>
+              <p class="card-cafe__text">Cobertura de chocolate meio amargo, fatia generosa.</p>
+              <span class="card-cafe__price">R$ 12,00</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">🥐</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Croissant de queijo</h3>
+              <p class="card-cafe__text">Massa folhada amanteigada, assada toda manhã.</p>
+              <span class="card-cafe__price">R$ 11,00</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">🧊</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Cold brew</h3>
+              <p class="card-cafe__text">Extraído a frio por 18 horas, servido com gelo e laranja.</p>
+              <span class="card-cafe__price">R$ 15,00</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">🥪</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Sanduíche natural</h3>
+              <p class="card-cafe__text">Pão de fermentação natural, frango desfiado e folhas.</p>
+              <span class="card-cafe__price">R$ 18,00</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">🍪</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Cookie de gotas</h3>
+              <p class="card-cafe__text">Crocante por fora, macio por dentro, com sal marinho.</p>
+              <span class="card-cafe__price">R$ 8,00</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-cafe">
+            <div class="card-cafe__img" aria-hidden="true">🎂</div>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Bolos sob encomenda</h3>
+              <p class="card-cafe__text">Aniversários e eventos. Peça com 3 dias de antecedência.</p>
+              <span class="card-cafe__price">Sob consulta</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="section">
+    <div class="container">
+      <h2 class="section__title">Quem passa por aqui, volta</h2>
+      <div id="carrosselDep" class="carousel slide depoimentos" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote>“O melhor cappuccino da cidade. Virou parada obrigatória antes do trabalho.”<footer>Mariana S.</footer></blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote>“Encomendei o bolo de aniversário da minha filha e foi um sucesso. Lindo e delicioso.”<footer>Carlos E.</footer></blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote>“Ambiente tranquilo, atendimento atencioso e wi-fi bom. Trabalho daqui toda semana.”<footer>Juliana P.</footer></blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDep" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselDep" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Fale com a gente</h2>
+      <p class="section__sub">Dúvidas, encomendas ou elogios: escolha o canal que preferir.</p>
+      <div class="row g-4">
+        <div class="col-12 col-lg-5">
+          <div class="card-cafe contato-canais">
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Canais de atendimento</h3>
+              <a class="btn btn-success w-100 mb-2" href="https://wa.me/5549999010850?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+              <a class="btn btn-primary w-100 mb-2" href="https://www.facebook.com/graoeprosa" target="_blank" rel="noopener">Facebook</a>
+              <a class="btn btn-danger w-100" href="https://www.instagram.com/graoeprosa" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <form id="formContato" class="card-cafe needs-validation" novalidate>
+            <div class="card-cafe__body">
+              <h3 class="card-cafe__title">Envie uma mensagem</h3>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required minlength="3">
+                <div class="invalid-feedback">Informe seu nome.</div>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" required>
+                  <div class="invalid-feedback">Informe um e-mail válido.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="assunto" class="form-label">Assunto</label>
+                  <select class="form-select" id="assunto" required>
+                    <option value="" selected disabled>Escolha</option>
+                    <option>Encomenda de bolo</option>
+                    <option>Dúvida</option>
+                    <option>Elogio ou reclamação</option>
+                  </select>
+                  <div class="invalid-feedback">Escolha um assunto.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="msg" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="msg" rows="4" required></textarea>
+                <div class="invalid-feedback">Escreva sua mensagem.</div>
+              </div>
+              <button type="submit" class="btn btn-warning">Enviar mensagem</button>
+              <div id="sucesso" class="alert alert-success mt-3 d-none" role="alert">Mensagem enviada! Responderemos em até 1 dia útil.</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p class="mb-0">© 2026 Grão &amp; Prosa. Todos os direitos reservados.</p>
+    <p class="mb-0">Rua das Flores, 123 – Centro, São Miguel do Oeste/SC</p>
+    <div class="footer__links">
+      <a href="https://www.facebook.com/graoeprosa" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/graoeprosa" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<a class="whats-fixo" href="https://wa.me/5549999999999" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">WhatsApp</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const form = document.getElementById('formContato');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    if (form.checkValidity()) {
+      document.getElementById('sucesso').classList.remove('d-none');
+      form.classList.remove('was-validated');
+      form.reset();
+    } else {
+      form.classList.add('was-validated');
+    }
+  });
+</script>
+</body>
+</html>

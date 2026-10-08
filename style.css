@@ -1,0 +1,106 @@
+:root {
+  --espresso: #2a1a14;
+  --pinheiro: #1f4a41;
+  --folha: #e6ebe3;
+  --acafrao: #e8a928;
+  --branco: #fffdf9;
+  --fonte-titulo: 'DM Serif Display', Georgia, serif;
+  --fonte-texto: 'Work Sans', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body { font-family: var(--fonte-texto); color: var(--espresso); background: var(--branco); line-height: 1.65; }
+h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 400; line-height: 1.2; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--acafrao); outline-offset: 2px; }
+
+.site-header { position: sticky; top: 0; z-index: 1000; background: var(--pinheiro); }
+.navbar-brand { font-family: var(--fonte-titulo); font-size: 1.5rem; }
+
+.hero {
+  min-height: 80vh; display: flex; align-items: center;
+  background: linear-gradient(120deg, rgba(42,26,20,.92), rgba(31,74,65,.88)), var(--espresso);
+  color: var(--branco);
+}
+.hero__content { padding-block: 4rem; }
+.hero h1 { font-size: clamp(2.2rem, 6vw, 4rem); max-width: 18ch; margin-bottom: 1rem; }
+.hero .lead { max-width: 48ch; margin-bottom: 2rem; }
+
+.section { padding: 5rem 0; }
+.section--alt { background: var(--folha); }
+.section__title { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: .5rem; }
+.section__sub { margin-bottom: 2.5rem; max-width: 60ch; }
+
+.sobre { display: flex; gap: 3rem; align-items: center; justify-content: space-between; }
+.sobre__texto { flex: 1 1 55%; }
+.sobre__texto h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 1rem; }
+.sobre__info {
+  flex: 1 1 35%; margin: 0; padding: 1.75rem;
+  background: var(--pinheiro); color: var(--branco); border-radius: 12px;
+}
+.sobre__info li { padding: .6rem 0; border-bottom: 1px solid rgba(255,255,255,.2); }
+.sobre__info li:last-child { border-bottom: 0; }
+.sobre__info strong { display: block; color: var(--acafrao); }
+
+.card-cafe {
+  display: flex; flex-direction: column;
+  height: 100%; margin: 0; padding: 0; overflow: hidden;
+  background: var(--branco); border: 1px solid rgba(42,26,20,.12);
+  border-radius: 14px; box-shadow: 0 2px 10px rgba(42,26,20,.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-cafe:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(42,26,20,.15); }
+.card-cafe__img {
+  display: flex; align-items: center; justify-content: center;
+  height: 130px; font-size: 3.5rem; background: var(--pinheiro);
+}
+.card-cafe__body { display: flex; flex-direction: column; flex: 1; padding: 1.25rem; gap: .5rem; }
+.card-cafe__title { font-size: 1.3rem; margin: 0; }
+.card-cafe__text { flex: 1; margin: 0; font-size: .95rem; }
+.card-cafe__price { font-weight: 600; color: var(--pinheiro); font-size: 1.1rem; }
+.contato-canais:hover, form.card-cafe:hover { transform: none; }
+
+.depoimentos { max-width: 720px; margin: 2rem auto 0; padding: 0 3rem; }
+.depoimentos blockquote {
+  margin: 0; padding: 1rem 0; text-align: center;
+  font-family: var(--fonte-titulo); font-size: clamp(1.2rem, 3vw, 1.7rem);
+}
+.depoimentos footer { margin-top: 1rem; font-family: var(--fonte-texto); font-size: .95rem; color: var(--pinheiro); font-weight: 600; }
+.depoimentos .carousel-control-prev-icon, .depoimentos .carousel-control-next-icon { filter: invert(1); }
+
+.site-footer { background: var(--espresso); color: var(--branco); padding: 2rem 0; font-size: .95rem; }
+.footer__inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.footer__links { display: flex; gap: 1.25rem; }
+.footer__links a { color: var(--acafrao); text-decoration: none; }
+.footer__links a:hover { text-decoration: underline; }
+
+.whats-fixo {
+  position: fixed; right: 16px; bottom: 16px; z-index: 1100;
+  padding: .75rem 1.1rem; border-radius: 50px; background: #25d366;
+  color: #fff; font-weight: 600; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+.whats-fixo:hover { color: #fff; background: #1ebe5b; }
+
+@media (max-width: 1199.98px) {
+  .section { padding: 4rem 0; }
+  .sobre { gap: 2rem; }
+}
+
+@media (max-width: 991.98px) {
+  .hero { min-height: 70vh; }
+  .sobre { flex-direction: column; align-items: stretch; }
+  .navbar-collapse { padding: 1rem 0; }
+}
+
+@media (max-width: 575.98px) {
+  .section { padding: 3rem 0; }
+  .hero { min-height: 65vh; }
+  .hero .btn { width: 100%; }
+  .depoimentos { padding: 0 2.5rem; }
+  .footer__inner { flex-direction: column; text-align: center; }
+  .whats-fixo { right: 10px; bottom: 10px; padding: .65rem .9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card-cafe { transition: none; }
+}
